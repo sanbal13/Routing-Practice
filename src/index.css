@@ -1,13 +1,251 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*************************** Custom Styles begins here ********************/
+html {
+    font-size: 16px;
 }
+body {
+    line-height: 1.5;
+    font-family: 'Hind Vadodara', sans-serif;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+.button {
+    background-color: #2D8180;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    margin: 1rem;
+    text-align: center;
+}
+.button:hover {    
+    background-color: rgb(2, 95, 2);    
+}
+.align-right {
+    text-align: right;
+    margin-bottom: 1rem; 
+}
+/**************** Flex ****************/
+.flex {
+    display: flex;
+    justify-content: space-between;    
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.align-center {
+    align-items: center;
+}
+.flex-start {
+    justify-content: flex-start;
+}
+.flex-10 {
+    flex: 0 1 12%;
+}
+.flex-30 {
+    flex: 0 1 30%;
+}
+.flex-45 {
+    flex: 0 1 45%;
+}
+.flex-90 {
+    flex: 0 1 90%;
+}
+.column {
+    flex-direction: column;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/************** Headings **************/
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-left: .5rem;   
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h4 {
+    font-size: 1.4rem;        
+}
+h5 {
+    text-align: center;
+}
+
+/************** Header **************/
+#search {
+    margin-left: 1rem;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: .3rem;
+    background-color: #30409F;
+    outline: none;
+    color: #63ca51;
+    border: 2px solid #409f30;
+}
+.header {
+    background-color: #30409F;
+    color: #789f30;
+}
+
+/************** Main **************/
+.main {
+    background-color: #D1EFEF;
+    min-height: 93.5vh;
+    padding: 2rem;
+}
+/* Home */
+
+.page {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    box-shadow: 1px 1px 10px grey;
+    width: 32%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+a {
+    color: #000;
+}
+
+/* Articles */
+.title {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+.author {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: grey;
+}
+/* Books & People*/
+.card-book, .card-people {
+    background-color: #fff;
+    margin: 1rem;
+    padding: 1rem;  
+}
+/* Books */
+.card-book {
+    width: 17%;
+}
+.book-title {
+    text-align: center;
+    margin: 1rem 0;
+}
+/* People */
+.card-people {
+    width: 30%;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 20px #000;
+}
+.card-people img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px #000;
+    border: 2px solid #fff;
+    margin-right: 1rem;
+}
+.person-description {
+    margin: 1rem 0; 
+    font-size: 1.2rem;
+}
+/************** Sidebar **************/
+.nav {
+    background-color: #63ca51;
+    height: 100%;
+    justify-content: flex-start;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.nav li {
+    padding: .5rem;
+    margin: .2rem 0;
+    border-radius: .3rem;
+    background-color: rgba(128, 128, 128, .5);
+}
+.nav .active {
+    display: block;
+    background-color: rgb(2, 95, 2);
+    color: #fff;       
+    width: 110%;
+    outline: .5rem solid rgb(2, 95, 2);
+}
+
+article {
+    font-size: 1.2rem;
+}
+
+
+/************** Footer **************/
