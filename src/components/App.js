@@ -15,7 +15,7 @@ class App extends Component {
   }
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.REACT_APP_PUBLIC_URL}>
         <Header />
         <div className="flex">
           <div className="flex-10">
