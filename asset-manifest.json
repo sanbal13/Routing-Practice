@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Routing-Practice/static/css/main.03d4c8c7.css",
+    "main.js": "/Routing-Practice/static/js/main.1122af52.js",
+    "index.html": "/Routing-Practice/index.html",
+    "static/media/brand.svg": "/Routing-Practice/static/media/brand.2f383b44b88005925438f47788bb03ae.svg",
+    "main.03d4c8c7.css.map": "/Routing-Practice/static/css/main.03d4c8c7.css.map",
+    "main.1122af52.js.map": "/Routing-Practice/static/js/main.1122af52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03d4c8c7.css",
+    "static/js/main.1122af52.js"
+  ]
+}
